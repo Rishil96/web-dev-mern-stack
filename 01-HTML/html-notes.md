@@ -17,7 +17,15 @@
 
 - MDN Link: https://developer.mozilla.org/en-US/docs/Web/HTML
 
-- **Attribute** : are the properties of an HTML tag.
-- continue from 1:28:35
+- **Attribute** : are the properties of an HTML tag. All HTML elements have attributes.
+
+---
+
+- **Structure**
+- `<!DOCTYPE html>` -> tells the browser that the page is using HTML5.
+- The whole webpage will be inside `<html> </html>` tags.
+- This is divided into 2 parts, head and body.
+    - head contains metadata about the page.
+    - body contains the data that is displayed while the page is opened in browser.
 
 ---

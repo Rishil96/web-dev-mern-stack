@@ -29,3 +29,18 @@
     - body contains the data that is displayed while the page is opened in browser.
 
 ---
+
+- **pre** : will display the content as it was written in HTML file. means number of spaces, next lines everything will be as it was written in HTML code.
+
+- **sup** : super script, used to write text above a given content like square, exponential, etc.
+
+- **sub** : sub script, opposite of super script, writes text down of base text.
+
+- **Quotation and Citation Tags** :-
+    - blockquote
+    - q
+    - cite
+    - address
+    - abbr
+
+continue from HTML Basics II 1:08:00

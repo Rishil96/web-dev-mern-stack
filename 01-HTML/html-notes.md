@@ -43,4 +43,3 @@
     - address
     - abbr
 
-continue from HTML Basics II 1:08:00

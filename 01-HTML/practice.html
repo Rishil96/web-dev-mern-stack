@@ -4,6 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <style>
+        table, tr, td, th {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+
+    </style>
 </head>
 <body>
     <!-- Paragraph Tag -->
@@ -80,6 +88,94 @@
     <!-- Abbreviation Tag -->
     <p>The <abbr title="World Health Organization">WHO</abbr> was founded in 1948.</p>
 
+    <!-- Ordered and Unordered List -->
+    <ol>
+        <li>LOL</li>
+        <li>ROFL</li>
+        <li>LMAO</li>
+        <li>LMFAO</li>
+        <li>OMG</li>
+    </ol>
+
+    <ul>
+        <li>Luffy</li>
+        <li>Zoro</li>
+        <li>Sanji</li>
+    </ul>
+
+    <!-- Tables -->
+    <table>
+        <thead>
+            <th>Col1</th>
+            <th>Col2</th>
+            <th>Col3</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Row 1 Data 1</td>
+                <td>Row 1 Data 2</td>
+                <td>Row 1 Data 3</td>
+            </tr>
+            <tr>
+                <td>Row 2 Data 1</td>
+                <td>Row 2 Data 2</td>
+                <td>Row 2 Data 3</td>
+            </tr>
+            <tr>
+                <td>Row 3 Data 1</td>
+                <td>Row 3 Data 2</td>
+                <td>Row 3 Data 3</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>Total 1</td>
+                <td>Total 2</td>
+                <td>Total 3</td>
+            </tr>
+        </tfoot>
+
+    </table>
+
+    <!-- Input Tag -->
+    <label for="username">Username:</label>
+    <input type="text" name="username">
+
+    <br>
+
+    <label for="password">Password:</label>
+    <input type="password" name="password">
+
+    <br>
+
+    <label for="radio">Radio:</label>
+    <input type="radio" name="radio">
+
+    <br>
+
+    <label for="check">Checkbox:</label>
+    <input type="checkbox" name="check">
+
+    <br>
+
+    <button>Submit</button>
+
+    <!-- Form Tag -->
+    <form action="https://google.com">
+
+        <label for="user">User:</label>
+        <input type="text" id="user">
+
+        <br>
+
+        <label for="pass">Password:</label>
+        <input type="password" id="pass">
+
+        <br>
+
+        <input type="submit" value="Login">
+
+    </form>
 
 </body>
 </html>

@@ -43,3 +43,9 @@
     - address
     - abbr
 
+- **rowspan**: a value that tells how many rows a given row should span to or take space of.
+- **colspan**: a value that tells how many columns a given column should span to or take space of.
+- **colgroup**: choose specific columns to add styling to.
+
+- **blockquote**: is a section that is quoted from another source.
+- **cite**: tag is used to display the author of the above given quote.

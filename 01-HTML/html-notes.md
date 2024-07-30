@@ -38,6 +38,30 @@
 
 ---
 
+#### Forms & Input Types
+
+- Forms are used to collect user input.
+- The action attribute specifies the URL where the form data will be sent for processing.
+- The method attribute determines how the data is sent (GET or POST).
+- common ways of accepting user input via **input** element are:-
+    - **text**: A single-line text input field.
+    - **password**: A text input field where the characters are masked.
+    - **email**: A text input field for email addresses.
+    - **number**: A numeric input field.
+    - **checkbox**: A box that can be checked or unchecked.
+    - **radio**: A set of options where only one can be selected.
+    - **submit**: A button to submit the form.
+    - **reset**: A button to reset the form.
+    - **button**: A generic button without a default action.
+- labels can be provided for each input like this
+```
+<label for="name">Name:</label>
+<input type="text" id="name" name="name">
+```
+- **TextArea** is a separate tag that can be used within a form to accept multiline inputs from the user.
+- **select**: is a tag used to create multipe options using **option** tag for user to choose between them in a form.
+---
+
 <a id="3"></a>
 
 ## Semantic HTML

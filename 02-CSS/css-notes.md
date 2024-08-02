@@ -12,7 +12,7 @@
 | 4. | [Positioning](#4) |
 | 5. | [Typography](#5) |
 | 6. | [Colors, Backgrounds & Common Properties](#6) |
-| 7. | [Styling Forms & Responsive Design](#7) |
+| 7. | [Media Query Syntax](#7) |
 
 
 <a id="1"></a>
@@ -100,7 +100,22 @@ Key properties for alignment:
 
 ## Positioning
 
+- CSS positioning **properties** allow you to precisely control the placement of elements on a page. There are four main types:
 
+    - **Static (default)**: Elements are positioned according to the normal flow of the document.
+    - **Absolute**: Element is positioned relative to the nearest positioned ancestor (or the viewport if there's no positioned ancestor).
+    - **Relative**: Element is positioned relative to its normal position.
+    - **Fixed**: Element is positioned relative to the viewport. It stays in the same place even if the page is scrolled.
+
+- **Offsets**
+    - **top, right, bottom, and left** properties are used to offset elements from their original position or their containing element, depending on the positioning mode.
+    - Negative values can be used to move an element in the opposite direction.
+
+- Key points:
+
+    - Absolute and fixed positioning can remove elements from the normal document flow.
+    - Relative positioning is useful for fine-tuning element placement.
+    Be careful when using absolute and fixed positioning as it can disrupt the layout if not used carefully.
 
 ---
 
@@ -108,22 +123,87 @@ Key properties for alignment:
 
 ## Typography
 
+- **Typography**: is the art and technique of arranging type to make written language legible, readable, and appealing when it is viewed.
 
+- **Fonts**: are the specific styles of a typeface. They can vary in weight, style (italic, bold), and size. There are two main types: serif and sans-serif.
+    - Serif fonts have small lines or feet at the ends of characters.
+    - Sans-serif fonts do not have these small lines.
 
+ when it is viewed.
+
+- **Text Alignment**: refers to the horizontal positioning of text within a container.
+
+    - **Left-aligned**: Text starts at the left margin and creates a ragged right edge.
+    - **Right-aligned**: Text starts at the right margin and creates a ragged left edge.
+    - **Centered**: Text is centered horizontally within the container.
+    - **Justified**: Text is aligned to both left and right margins, creating even spacing.
+
+- **Line Height**: also known as leading, is the vertical space between lines of text. It affects the readability of text. A good line height ensures enough space between lines for easy reading.
 ---
 
 <a id="6"></a>
 
 ## Colors, Backgrounds & Common Properties
 
+- different ways to use colors to style web pages are: names, hex codes, RGB values, RGBA values.
 
+- **Backgrounds**: Backgrounds are the area behind your content. You can set background colors, images, and even gradients.
+
+    - **background-color**: Sets the background color.
+    - **background-image**: Sets a background image.
+    - **background-repeat**: Controls how the image repeats.
+    - **background-position**: Positions the image.
+    - **background-attachment**: Determines if the image scrolls with the page or stays fixed.
+
+---
+- Common Display Values:
+    - **block**:
+    The element occupies the entire width of its container.
+    Starts on a new line.
+    Examples: div, p, header, footer
+    - **inline**:
+    The element does not start on a new line.
+    Only takes up the width of its content.
+    Examples: span, a, img
+    - **inline-block**:
+    Combines properties of block and inline elements.
+    Displays like an inline element but allows you to set width and height.
+    - **flex**:
+    Enables flexible layout for child elements within a container.
+    Uses the Flexbox model for layout.
+    - **grid**:
+    Enables two-dimensional grid-based layout for child elements within a container.
+    Uses the CSS Grid layout module.
+    - **none**:
+    Hides the element completely.
 
 ---
 
 <a id="7"></a>
 
-## Styling Forms & Responsive Design
+## Media Query Syntax
 
+- Media queries are a powerful tool in CSS for creating responsive designs. They allow you to apply specific styles based on different screen sizes, device types, and other conditions.
 
+```
+@media screen and (min-width: 768px) {
+  /* CSS styles for screens with a minimum width of 768px */
+}
+```
 
+- Breakdown of Syntax
+    - **@media**: This keyword indicates the start of a media query.
+    - **screen**: This is a media type, specifying the target device. Other media types include print, all, etc.
+    - **and**: This optional keyword combines multiple media conditions.
+    - **(min-width: 768px)**: This is a media feature expression, specifying a minimum screen width. Other media features include max-width, orientation, device-width, device-height, etc.
+    - **{ /* CSS styles */ }**: This block contains the CSS rules that will be applied if the media query conditions are met.
+
+- You can combine multiple media features using and or or.
+- Media queries can be nested for more complex conditions.
+- Common media features include:
+    - **min-width, max-width**: for screen width
+    - **orientation**: for portrait or landscape mode
+    - **device-width, device-height**: for device dimensions
+    - **resolution**: for screen resolution
+- By effectively using media queries, you can create websites that adapt to different screen sizes and provide optimal user experiences across various devices.
 ---

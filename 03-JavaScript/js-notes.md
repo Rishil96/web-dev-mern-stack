@@ -197,8 +197,14 @@ console.log(greet("Charlie")); // Output: Hello, Charlie!
 
 ## DOM Manipulation
 
+- **DOM**: Document Object Model. used to manipulate content, style and structure of HTML/CSS.
+- DOM can be imagined as a tree of nodes starting from html that has 2 children head and body tags and so on. Document node is the root node of the DOM Tree which has the child node html.
 
+- Multiple ways to select are:- getElementById, getElementsByClass, getElementsByTagName
+- Also this can be achieved by querySelecter and querySelectorAll where we can pass any CSS selector in it.
+- Go through basics.js file to get a glimpse of various methods we can use for DOM manipulation.
 
+- **Event Listeners**:
 ---
 <a id="5"></a>
 

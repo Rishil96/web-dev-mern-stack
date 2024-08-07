@@ -204,8 +204,33 @@ console.log(greet("Charlie")); // Output: Hello, Charlie!
 - Also this can be achieved by querySelecter and querySelectorAll where we can pass any CSS selector in it.
 - Go through basics.js file to get a glimpse of various methods we can use for DOM manipulation.
 
-- **Event Listeners**:
 ---
+
+- **Event Listeners**: allows to add interactive functionality to the web page based on events such as for example click event.
+
+- Syntax is `element.addEventListener('event-type', function-to-call)`
+
+---
+
+- **Event Propagation** refers to how an event travels through the Document Object Model (DOM). There are three phases of event propagation:
+
+    1. **Event Capturing**: The event travels from the document node down to the target element. This is also known as the "capturing phase."
+    2. **Target**: The event reaches the target element where the actual event takes place.
+    3. **Event Bubbling**: The event travels back up from the target element to the document node. This is known as the "bubbling phase."
+
+Here's a brief illustration of these phases:
+
+**Event Capturing**: Document → Parent → Child (target)
+**Target**: The event occurs at the target element (Child)
+**Event Bubbling**: Child (target) → Parent → Document
+
+---
+
+- **Event Delegation**: allows users to append a SINGLE event listener to a parent element that adds it to all of its present and future descendants that match a selector.
+- Adding the event listener to a parent element will automatically add those events to its current and future children elements.
+
+---
+
 <a id="5"></a>
 
 ## ES6+ Features

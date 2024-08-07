@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .hidden-content {
+            display: none;
+        }
+
+        .hidden-content.reveal-btn {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="main-heading">Event Listeners</h1>
+    <div class="container">
+        <div class="boxes box-1">
+            <h1 id="heading">Example 1</h1>
+            <button onclick="alert('I love JS')">Enter</button>
+        </div>
+        <div class="boxes box-2">
+            <h1 id="heading">Example 2</h1>
+            <button class="btn-2">Enter</button>
+        </div>
+        <div class="boxes box-3">
+            <h1 id="heading">Example 3</h1>
+            <button class="btn-3">Enter</button>
+        </div>
+    </div>
+
+    <div class="container">
+        <button class="reveal-btn boxes">Reveal More</button>
+    
+        <div class="hidden-content boxes">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error eligendi ipsam dolore corrupti autem nostrum deserunt placeat tenetur eius ad sapiente, quae quibusdam temporibus. Sint.</div>
+    </div>
+
+    <ul id="sports">
+        <li id="football">Football</li>
+        <li id="basketball">Basketball</li>
+        <li id="boxing">Boxing</li>
+        <li id="tennis">Tennis</li>
+        <li id="golf">Golf</li>
+    </ul>
+
+</body>
+<script src="events.js"></script>
+</html>

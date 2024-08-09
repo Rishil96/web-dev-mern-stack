@@ -235,9 +235,71 @@ Here's a brief illustration of these phases:
 
 ## ES6+ Features
 
+- **Template Literals**: basically f-strings of Python. Uses `` instead of regular quotes and we can format variables in it like shown below.
+```
+let name = "Alice";
 
+let greeting = `Hello, ${name}!`;
+
+let poem = `Roses are red,
+Violets are blue,
+I love JavaScript,
+And so do you!`;
+
+console.log(poem);
+```
+- important to know is we can write multiline strings and also insert expressions in the string.
 
 ---
+
+- **Destructuring**: Destructuring is a powerful way to unpack values from arrays or properties from objects into distinct variables. 
+
+```
+# Destructuring Arrays
+
+const numbers = [1, 2, 3, 4];
+const [first, second, ...rest] = numbers;
+
+console.log(first); // Output: 1
+console.log(second); // Output: 2
+console.log(rest); // Output: [3, 4]
+
+# Destructuring Objects
+
+const person = { name: 'Alice', age: 30, city: 'New York' };
+const { name, age } = person;
+
+console.log(name); // Output: Alice
+console.log(age); // Output:   
+ 30
+```
+
+---
+
+- **Spread Operator**: The spread operator (three dots ...) allows you to expand an iterable (like an array or object) into individual elements.
+
+```
+const numbers1 = [1, 2, 3];
+const numbers2 = [4, 5, 6];
+const combined = [...numbers1, ...numbers2];
+console.log(combined);  // Output: [1, 2, 3, 4, 5, 6]
+```
+
+---
+
+- The **rest operator** (represented by three dots ...) allows a function to accept an indefinite number of arguments as an array. This makes it versatile for creating functions that can handle varying numbers of inputs.
+
+```
+function functionName(...restParameters) {
+  // Function body
+}
+```
+---
+
+- **Modules** are essentially separate JavaScript files that encapsulate related code.
+- **Export** is used to make specific functions, variables, or objects accessible to other modules.
+- **Import** is used to bring in exported elements from other modules into your current file.
+
 <a id="6"></a>
 
 ## Asynchronous JS

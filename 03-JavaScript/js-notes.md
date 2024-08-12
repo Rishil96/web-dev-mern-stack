@@ -304,7 +304,24 @@ function functionName(...restParameters) {
 
 ## Asynchronous JS
 
+- **Synchronous Programming**: follows each step/instruction in order.
 
+- **Asynchronous Programming**: Asynchronous programming allows JavaScript to perform tasks without blocking the main thread. This means that JavaScript can handle other operations while waiting for tasks like network requests, file I/O, or timers to complete.
+
+- **Callback**: A callback is a function passed as an argument to another function. It is executed after the completion of the asynchronous operation. 
+- For e.g. there are 2 functions A and B, and B is dependent on function A's results, so we will pass function B as a callback function (basically a function parameter) to function A. 
+- Then inside A whenever all the tasks of function A is completed, only then we will call function B which is the callback function in this case. 
+- This ensures function B to run only after A has completed execution. Function B should never be called directly as it depends on A.
+
+- **Promises**: A Promise is an object representing the eventual completion or failure of an asynchronous operation. It can be in one of three states: pending, fulfilled, or rejected.
+- A Promise in JavaScript is like a guarantee that you will receive a result of an asynchronous operation in the future. It can either be:
+- Fulfilled: The operation was successful, and you got what you wanted.
+- Rejected: The operation failed, and something went wrong.
+
+- **Async/Await**: async and await provide a cleaner way to work with Promises, making asynchronous code look more like synchronous code.
+
+- async: Declares a function as asynchronous.
+- await: Pauses the execution of the function until the Promise is resolved or rejected.
 
 ---
 <a id="7"></a>

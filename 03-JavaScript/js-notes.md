@@ -328,20 +328,64 @@ function functionName(...restParameters) {
 
 ## Common Built-in Methods
 
+- **Array Properties**
+    - **push()**: add element to end of array.
+    - **pop()**: pop element from end of array.
+    - **shift()**: removes first element from the array.
+    - **unshift()**: adds one or more elements to the start of array.
+    - **map()**: creates a new array with the results received from the function provided in the map method.
+    - **filter()**: creates a new array with the elements the passes through the filter condition.
+    - **forEach()**: executes a provided function for each element of array.
+    - **find()**: returns the first element that satisfies the find condition.
+    - **slice()**: returns a subarray by creating a shallow copy.
 
+---
+
+- **String Properties**
+    - **charAt()**: returns character at the specified index.
+    - **concat()**: joins 2 or more string.
+    - **includes()**: check if input string can be found in the main string.
+    - **indexOf()**: returns index of first occurrence of provided value.
+    - **toUpperCase()**: converts string to uppercase.
+    - **toLowerCase()**: converts string to lowercase.
+    - **slice()**: creates shallow copy of slice of a string.
+    - **split()**: splits string into array based on given delimiter.
+    - **replace()**: replace first occurrence with the given input.
+    - **trim()**: removes whitespace from both ends of string.
+
+---
+
+- **Object Properties**
+    - keys(): returns array of keys of object.
+    - values(): returns array of values of object.
+    - entries(): returns key, value pair 2D array.
 
 ---
 <a id="8"></a>
 
 ## JSON
 
+- 2 main operations for JSON in JavaScript are parsing & stringifying.
 
+- **JSON parsing** refers to converting a JSON string into a JavaScript object. This is done using the JSON.parse() method.
+
+- **JSON stringifying** refers to converting a JavaScript object or array into a JSON string. This is done using the JSON.stringify() method.
 
 ---
+
 <a id="9"></a>
 
 ## Fetch API
 
-
+- **Fetch API**: The fetch() function is used to make HTTP requests. It returns a promise that resolves to the Response object representing the response to the request.
+```
+    fetch(url, options)
+    .then(response => {
+        // Handle the response
+    })
+    .catch(error => {
+        // Handle any errors
+    });
+```
 
 ---

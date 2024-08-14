@@ -57,11 +57,18 @@
 
 ## File System
 
+- using fs module of Node, we can perform multiple operations on files and directories.
+
 ---
 
 <a id="4"></a>
 
 ## Event Driven Programming
+
+- an Event is a signal that something happened.
+- emit method of EventEmitter class is used to signal occurrence of an event.
+- a listener is used to listen to events.
+- If we want to raise events, we need to create a class that extends EventEmitter class from events module. This has 2 main functionalities i.e. .on() to create a listener and .emit() to simulate occurrence of an event.     
 
 ---
 
@@ -69,11 +76,21 @@
 
 ## HTTP Module
 
+- HTTP module can be used to create web servers which are basically EventEmitters that listen to http requests.
+- In reality we will use Express.js to build web servers which is built on top of this http module.
+
 ---
 
 <a id="6"></a>
 
 ## Environment Variables
 
+- Node.js provides a built-in way to access environment variables through process.env. Here's an example:
+
+```
+const port = process.env.PORT || 3000;
+console.log(`Server running on port ${port}`);
+```
+- we can also use a .env file to store env variables and load them in code using dotenv library. More on that when we build applications.
 ---
 

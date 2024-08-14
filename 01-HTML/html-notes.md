@@ -119,6 +119,6 @@
 
 - **\<audio>**: Embeds audio content. It supports various attributes and child elements for controlling playback.
 
-- **\<video>**: Embeds video content. Like the <audio> element, it supports various attributes and child elements for controlling playback.
+- **\<video>**: Embeds video content. Like the \<audio\> element, it supports various attributes and child elements for controlling playback.
 
 ---

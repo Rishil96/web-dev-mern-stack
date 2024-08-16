@@ -31,6 +31,15 @@
 
 ## Core Concepts
 
+- **Middleware** is the code that runs between the starting of the request and the ending of the request.
+- Every middleware function takes req, res and next parameters.
+- Also middleware should be defined above all routes as it is read from top to bottom.
+- If we want to run middleware only on selected routes, pass it as second argument in between path and the route function.
+
+- Middleware can also be used to render static pages, create all html static pages in a folder called public and add it in server.js like `app.use(express.static("public"))`.
+- Now any html files in this public folder can be accessed via extending the path of our URL with the path inside this public folder.
+- To accept query parameters like `http://localhost/3000?name=Rishil` use req.query.name in specific route to get it.
+
 ---
 
 <a id="3"></a>

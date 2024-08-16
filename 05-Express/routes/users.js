@@ -2,12 +2,23 @@ import express from 'express'
 
 const router = express.Router();
 
-router.get('/', (req, res) => {
-    res.send("USER LIST!");
+router.post('/', (req, res) => {
+    // Reading from body of request and rendering
+    // res.send(`Hi ${req.body.firstName}`);
+
+    const isValid = true;
+    if (isValid) {
+        users.push(req.body.firstName);
+        res.redirect(`/users/${users.length - 1}`)
+    }
+    else {
+        console.log("Error");
+        res.render('users/new', {firstName: req.body.firstName});
+    }
 });
 
 router.get("/new", (req, res) => {
-    res.send("NEW USER FORM");
+    res.render("users/new", {firstName: "Rishil"});
 });
 
 

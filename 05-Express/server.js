@@ -6,6 +6,15 @@ const app = express();
 
 // Set view engine to render html
 app.set('view engine', 'ejs');
+// Use middleware to log paths for every request
+app.use(logger);
+// Allows rendering static html files in folder mentioned
+app.use(express.static("public"));
+// Allows express to access information that comes in request body
+app.use(express.urlencoded({ extended: true }));
+// Allows json data accept from request
+app.use(express.json());
+
 
 // Create a GET route
 app.get('/', (req, res) => {
@@ -22,7 +31,18 @@ app.get('/', (req, res) => {
     res.render('index', {author: "Rishil Ramesh"});
 })
 
+app.get("/query", (req, res) => {
+    res.send(`So your name is ${req.query.name}`);
+})
+
 app.use('/users', userRouter);
+
+// Create a logger middleware
+function logger(req, res, next) {
+    console.log("Path: ", req.originalUrl);
+    next();
+}
+
 
 // To make our server run on a given port
 app.listen(3000);

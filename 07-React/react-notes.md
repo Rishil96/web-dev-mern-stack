@@ -20,7 +20,19 @@
 
 ## Introduction & Components
 
+- **React** is a frontend framework that allows us to build frontend based applications with ease.
 
+- Thinking in React: think about your final product as an application and then break the UI into a component hierarchy 
+
+- create a react project using `npm create vite@latest` and select configurations.
+
+- it will generate some starter files in our project folder, index.html and main.jsx hooks each other up.
+
+- everything inside your application is rendered inside div with class root that is in our index file
+
+- a function inside of react as long it starts with a capital letter is a **Component**. When we return jsx from a function starting with capital letter, it is a component.
+
+- a react component/function can only return one JSX/HTML element.
 
 ---
 

@@ -89,3 +89,15 @@
 <a id="1"></a>
 
 ## Work with Mongoose
+
+- is a wrapper around MongoDB for JavaScript.
+- **Schema**: defines what the structure of your data looks like.
+- **Model**: is the schema in actual form.
+- **Query**: is a query that we make against a MongoDB database.
+
+- find function in mongoose works the same as it does in MongoDB.
+
+- to simplify things, we can use .where function on Model object to find documents based on conditions.
+```
+const user = await User.where("age").gt(12).lt(21).where("name").equals("Rishil")
+```

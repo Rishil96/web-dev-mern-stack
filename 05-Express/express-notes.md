@@ -40,6 +40,12 @@
 - Now any html files in this public folder can be accessed via extending the path of our URL with the path inside this public folder.
 - To accept query parameters like `http://localhost/3000?name=Rishil` use req.query.name in specific route to get it.
 
+- Start the server using app.listen()
+- Starts the HTTP Server and takes port number and host optionally on which the server will be available on
+    - Port: A number representing the port on which the server should listen (e.g., 3000).
+    - Hostname (optional): A string representing the hostname or IP address to bind to (default is localhost or 0.0.0.0).
+    - Callback (optional): A function to execute once the server starts listening for requests.
+
 ---
 
 <a id="3"></a>
@@ -86,6 +92,23 @@
 <a id="7"></a>
 
 ## Security & Best Practices
+
+- **CORS Policy**: Cross-Origin Resource Sharing is a security mechanism in web browsers that restricts the ability of a web page to make requests to a different domain. It basically prevents unauthorized cross-origin access to a resource or a server.
+- To allow access to another origin, use below code for Node.js.
+
+```
+    // Option 1: Allow everything
+    app.use(cors());
+
+    // Option 2: Allow custom origins
+    app.use(cors(
+        {
+            origin: 'http://localhost:3000',
+            methods: ['GET', 'POST', 'PUT', 'DELETE'],
+            allowedHeaders: ['Content-Type']
+        }
+    ))
+```
 
 ---
 

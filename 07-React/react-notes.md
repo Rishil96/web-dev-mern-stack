@@ -89,6 +89,12 @@
 
 ## Context API & React Router
 
+- **Browser Router**: is a component provided by react-router-dom, a popular library used for handling client-side routing in React applications. It enables you to navigate between different components or pages without needing to reload the entire page.
+
+- **Routes Component**: The \<Routes\> component is like a "container" or "switchboard" that decides which page or component to show based on the URL in your browser. You use it to wrap all your individual routes.
+
+- **Route Component**: The \<Route\> component is used to define a specific "path" or URL that your app can have. For each path, you tell it which component (or page) should be shown.
+
 ---
 
 <a id="8"></a>
